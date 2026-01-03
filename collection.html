@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collection — bogan.co.nz</title>
+  <meta name="description" content="Browse a bogan.co.nz collection." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">BOGAN</span><span class="brand-dot">.co.nz</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <div id="navMenu" class="nav-menu" data-nav-menu>
+          <a href="shop.html">Shop</a>
+          <a href="field-guide.html">Bogan Field Guide</a>
+          <a href="what-is-a-bogan.html">What is a Bogan?</a>
+          <a href="about.html">About</a>
+          <a class="nav-cta" href="shop.html#bundles">Gift Finder</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <header class="page-head">
+      <h1 data-collection-title>Collection</h1>
+      <p class="lede" data-collection-subtitle>Browse the goods.</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="pill" data-collection-pill>All</div>
+      <div class="search">
+        <label class="sr-only" for="q">Search products</label>
+        <input id="q" type="search" placeholder="Search (e.g., tee, stubby, starter pack)" data-product-search />
+      </div>
+    </div>
+
+    <section class="section compact">
+      <div class="grid products" data-product-grid></div>
+    </section>
+
+    <div class="section-actions">
+      <a class="btn btn-ghost" href="shop.html">← Back to Shop</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span class="muted">© <span data-year></span> bogan.co.nz</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/products.js"></script>
+</body>
+</html>

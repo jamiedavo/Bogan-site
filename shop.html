@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — bogan.co.nz</title>
+  <meta name="description" content="Shop bogan apparel, gifts, cards, prints, and bundles." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">BOGAN</span><span class="brand-dot">.co.nz</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <div id="navMenu" class="nav-menu" data-nav-menu>
+          <a class="active" href="shop.html">Shop</a>
+          <a href="field-guide.html">Bogan Field Guide</a>
+          <a href="what-is-a-bogan.html">What is a Bogan?</a>
+          <a href="about.html">About</a>
+          <a class="nav-cta" href="shop.html#bundles">Gift Finder</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <header class="page-head">
+      <h1>Shop</h1>
+      <p class="lede">Apparel, gifts, and cultural artefacts for the shed-adjacent community.</p>
+    </header>
+
+    <section class="section compact" id="categories">
+      <div class="grid tiles">
+        <a class="tile" href="collection.html?cat=apparel">
+          <h3>Apparel</h3><p>Wear it to town. Or the servo. Both are sacred.</p>
+        </a>
+        <a class="tile" href="collection.html?cat=gifts">
+          <h3>Gifts &amp; Home</h3><p>For the bar, the shed, and the suspicious coffee table.</p>
+        </a>
+        <a class="tile" href="collection.html?cat=prints">
+          <h3>Cards &amp; Prints</h3><p>Maximum laugh per dollar.</p>
+        </a>
+        <a class="tile" href="collection.html?cat=bundles">
+          <h3>Bundles</h3><p>Gifting made idiot-proof.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section compact" id="signature">
+      <div class="section-head">
+        <h2>Signature Picks</h2>
+        <p>Start here if you want the “oh yep, that’s bogan” hit immediately.</p>
+      </div>
+      <div class="grid products" data-product-grid data-filter="signature"></div>
+    </section>
+
+    <section class="section compact" id="bundles">
+      <div class="section-head">
+        <h2>Bundles &amp; Starter Packs</h2>
+        <p>For partners, mates, and anyone panic-buying a gift.</p>
+      </div>
+      <div class="grid products" data-product-grid data-filter="bundles"></div>
+      <div class="section-actions">
+        <a class="btn btn-ghost" href="collection.html?cat=bundles">See all bundles</a>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="section-head">
+        <h2>Everything</h2>
+        <p>Browse the lot. Filterable collections are in the category tiles above.</p>
+      </div>
+      <div class="grid products" data-product-grid></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span class="muted">© <span data-year></span> bogan.co.nz</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/products.js"></script>
+</body>
+</html>
